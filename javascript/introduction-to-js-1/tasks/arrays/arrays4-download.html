@@ -29,6 +29,17 @@
     const birds = [ "Parrots", "Falcons", "Eagles", "Emus", "Caracaras", "Egrets" ];
 
     // Add your code here
+    
+eaglesIndex = birds.indexOf('Eagles');
+if (eaglesIndex !== -1) {
+  birds.splice(eaglesIndex, 1);
+}
+
+function startsWithE(birds) {
+  return birds.startsWith('E');
+}
+
+const eBirds = birds.filter(startsWithE)
 
     // Don't edit the code below here!
 
