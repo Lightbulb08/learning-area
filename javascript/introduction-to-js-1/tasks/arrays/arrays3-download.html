@@ -29,7 +29,16 @@
     let myArray = [ "Ryu", "Ken", "Chun-Li", "Cammy", "Guile", "Sakura", "Sagat", "Juri" ];
 
     // Add your code here
-
+    
+const myArray = ["Ryu", "Ken", "Chun-Li", "Cammy", "Guile", "Sakura", "Sagat", "Juri"];
+myArray.pop();
+myArray.push('Bennett', 'Ruthie');
+function addIndex(name, index) {
+return `${name} (${index})`;
+}
+const indexAdded = myArray.map(addIndex);
+myString = indexAdded.join(' - ');
+    
     // Don't edit the code below here!
 
     const section = document.querySelector('section');
